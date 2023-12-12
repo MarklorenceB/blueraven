@@ -449,6 +449,15 @@ header {
 .why-choose {
   padding: 50px 20px;
 }
+.why-choose .title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.why-choose .title h2 {
+  color: #ed7422;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
 .why-choose .wrapper h1 {
   text-align: center;
   font-size: 25px;
@@ -665,4 +674,102 @@ footer .footer .foot .content img {
 }
 footer .footer .foot .content h2 {
   font-size: 10px;
+}
+
+.about-banner {
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: contain;
+  min-height: 80vh;
+  padding: 250px 0;
+  position: relative;
+}
+.about-banner .about-wrapper {
+  align-items: center;
+}
+.about-banner .about-wrapper .content h1 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 50px;
+}
+.about-banner .about-wrapper .content p {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.about-banner .about-wrapper .images {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  width: 100%;
+  height: 90vh;
+  position: absolute;
+  padding: 20px;
+  top: 0;
+  right: 0;
+}
+
+.our-gallery {
+  padding: 50px 20px;
+}
+.our-gallery .title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.our-gallery .title h2 {
+  color: #ed7422;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+.our-gallery .gallery-wrapper {
+  margin-bottom: 50px;
+  display: flex;
+  gap: 30px;
+}
+.our-gallery .gallery-wrapper .images-gal img {
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+}
+.our-gallery .btn {
+  display: grid;
+  justify-content: center;
+}
+.our-gallery .btn .com-btn-1 {
+  border-left: 10px solid #ed7422;
+}
+.our-gallery .btn .com-btn-1 .btn-sign {
+  justify-content: center;
+  border: 1px solid #fff;
+  padding: 15px 20px;
+  width: 100%;
+  margin-left: 10px;
+}
+.our-gallery .btn .com-btn-1 .btn-sign a {
+  text-align: center;
+  color: #fff;
+  font-size: 13px;
+}
+
+.rental-banner {
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: contain;
+  min-height: 80vh;
+  padding: 200px 0;
+  position: relative;
+}
+.rental-banner .rental-wrapper {
+  align-items: center;
+}
+.rental-banner .rental-wrapper .content h1 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 50px;
+}
+.rental-banner .rental-wrapper .content p {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=main.css.map */

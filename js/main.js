@@ -59,6 +59,10 @@ $(function () {
   $(".content-rental").matchHeight({ byRow: false });
 });
 
+$(function () {
+  $(".images-gal").matchHeight({ byRow: false });
+});
+
 // for toggle button on header
 $(".navbar-toggler").on("click", function (e) {
   e.preventDefault();

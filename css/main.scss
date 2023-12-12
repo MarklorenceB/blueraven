@@ -486,6 +486,16 @@ header {
 
 .why-choose {
   padding: 50px 20px;
+
+  .title {
+    text-align: center;
+    margin-bottom: 40px;
+    h2 {
+      color: #ed7422;
+      font-size: 35px;
+      margin-bottom: 20px;
+    }
+  }
   .wrapper {
     h1 {
       text-align: center;
@@ -720,6 +730,119 @@ footer {
         h2 {
           font-size: 10px;
         }
+      }
+    }
+  }
+}
+
+.about-banner {
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: contain;
+
+  min-height: 80vh;
+  padding: 250px 0;
+  position: relative;
+
+  .about-wrapper {
+    align-items: center;
+
+    .content {
+      h1 {
+        color: #fff;
+        margin-bottom: 20px;
+        font-size: 50px;
+      }
+      p {
+        color: #fff;
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+    }
+
+    .images {
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      width: 100%;
+      height: 90vh;
+      position: absolute;
+      padding: 20px;
+      top: 0;
+      right: 0;
+    }
+  }
+}
+
+.our-gallery {
+  padding: 50px 20px;
+  .title {
+    text-align: center;
+    margin-bottom: 40px;
+    h2 {
+      color: #ed7422;
+      font-size: 35px;
+      margin-bottom: 20px;
+    }
+  }
+  .gallery-wrapper {
+    margin-bottom: 50px;
+    display: flex;
+    gap: 30px;
+    .images-gal {
+      img {
+        height: 500px;
+        object-fit: cover;
+        border-radius: 15px;
+      }
+    }
+  }
+
+  .btn {
+    display: grid;
+    justify-content: center;
+    .com-btn-1 {
+      border-left: 10px solid #ed7422;
+
+      .btn-sign {
+        justify-content: center;
+        border: 1px solid #fff;
+        padding: 15px 20px;
+        width: 100%;
+        margin-left: 10px;
+
+        a {
+          text-align: center;
+          color: #fff;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
+.rental-banner {
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: contain;
+
+  min-height: 80vh;
+  padding: 200px 0;
+  position: relative;
+
+  .rental-wrapper {
+    align-items: center;
+
+    .content {
+      h1 {
+        color: #fff;
+        margin-bottom: 20px;
+        font-size: 50px;
+      }
+      p {
+        color: #fff;
+        font-size: 20px;
+        margin-bottom: 20px;
       }
     }
   }
