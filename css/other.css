@@ -134,7 +134,7 @@
 .car-slider {
   height: 100%;
 }
-.car-slider .owl-stage-outer {
+.car-slider .owl-stage, .car-slider .owl-item, .car-slider li, .car-slider .owl-stage-outer {
   height: 100%;
 }
 .car-slider .owl-dots {

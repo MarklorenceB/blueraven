@@ -132,7 +132,7 @@
 
 .car-slider {
     height: 100%;
-    .owl-stage-outer{
+    .owl-stage, .owl-item, li, .owl-stage-outer{
         height: 100%;
     }
     .owl-dots{
