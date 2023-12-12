@@ -86,30 +86,7 @@ $(function () {
 });
 
 // for owl carousel
-$(document).ready(function () {
-  var owl = $(".technical_skill .owl-carousel");
-  owl.owlCarousel({
-    margin: 50,
-    smartSpeed: 1000,
-    autoplay: true,
-    navText: [
-      "<i class='fa fa-long-arrow-left'></i>",
-      "<i class='fa fa-long-arrow-right'></i>",
-    ],
-    nav: true,
-    dots: true,
-    dotsEach: true,
-    loop: true,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      991: {
-        items: 3,
-      },
-    },
-  });
-});
+
 
 //  (function(){
 
@@ -164,34 +141,3 @@ $(document).ready(function () {
 //     window.addEventListener('scroll', checkScroll);
 
 //   })();
-
-$(document).ready(function () {
-  $(".home-2 .owl-carousel").owlCarousel({
-    // items: 7,
-    margin: 80,
-    loop: true,
-    autoplay: true,
-    slideTransition: "linear",
-    autoplayTimeout: 1500,
-    autoplaySpeed: 1500,
-    autoplayHoverPause: false,
-    responsiveClass: true,
-    responsive: {
-      0: {
-        items: 2,
-      },
-      768: {
-        items: 4,
-      },
-      1024: {
-        items: 6,
-      },
-    },
-  });
-  $(".clients-panel li").matchHeight({ byRow: false });
-});
-
-lightbox.option({
-  resizeDuration: 200,
-  wrapAround: true,
-});
