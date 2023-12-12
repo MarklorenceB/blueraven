@@ -1,0 +1,668 @@
+@import url("https://fonts.cdnfonts.com/css/asterone-demo");
+@import url("https://fonts.cdnfonts.com/css/general-sans");
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
+h1 {
+  font-family: "Asterone DEMO", sans-serif;
+}
+
+h2 {
+  font-family: "Asterone DEMO", sans-serif;
+}
+
+p {
+  font-family: "General Sans", sans-serif;
+}
+
+* {
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+span,
+p,
+a,
+label {
+  margin-bottom: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.ease,
+a,
+input[type=submit],
+button {
+  transition: all 0.5s ease;
+}
+
+.relative {
+  position: relative;
+}
+
+.clearfix {
+  display: block;
+  clear: both;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: "";
+  clear: both;
+  height: 0;
+}
+
+.center-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.middle-div {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.hori-div {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.bg-common {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.relative,
+.rel {
+  position: relative;
+}
+
+.absolute,
+.abs {
+  position: absolute;
+}
+
+input:focus,
+button:focus,
+textarea:focus {
+  outline: none;
+}
+
+.z-top {
+  position: relative;
+  z-index: 80;
+}
+
+.change_header_bg {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.section_padding {
+  padding: 100px 0;
+}
+
+.navbar-toggler {
+  display: block;
+  padding: 27px 19px;
+  width: 18px;
+  height: 2px;
+  border: 0;
+  box-sizing: content-box;
+  background-clip: content-box;
+  transition: background-color 500ms ease-in-out 250ms;
+  background-color: #000;
+  transform: scale(1.2);
+}
+
+.navbar-toggler:hover {
+  cursor: pointer;
+}
+
+.navbar-toggler:before,
+.navbar-toggler:after {
+  position: relative;
+  content: "";
+  display: block;
+  width: 18px;
+  height: 2px;
+  background-color: #000;
+  transition: transform 500ms ease-in-out;
+}
+
+.navbar-toggler:before {
+  top: -6px;
+}
+
+.navbar-toggler:after {
+  bottom: -4px;
+}
+
+.navbar-toggler__text {
+  display: none;
+}
+
+.navbar-toggler--active {
+  background-color: rgba(255, 255, 255, 0);
+  transition-delay: 0s;
+}
+
+.navbar-toggler--active:before {
+  transform: translateY(6px) rotate(-225deg);
+}
+
+.navbar-toggler--active:after {
+  transform: translateY(-6px) rotate(225deg);
+}
+
+body {
+  font-family: "Asterone DEMO", sans-serif;
+  background-color: #0e1b2a;
+  color: #fff;
+}
+
+#site-header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+#site-header.hide {
+  top: -130px;
+}
+
+.container-fluid {
+  padding: 0 10%;
+}
+
+.navbar-brand {
+  width: 20%;
+}
+.navbar-brand img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+header {
+  padding: 20px;
+}
+
+.navbar-nav {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+.navbar-nav li {
+  margin-right: 20px;
+}
+.navbar-nav li a {
+  color: rgb(255, 255, 255);
+  font-family: "Asterone DEMO", sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.btn-1 {
+  border-left: 10px solid #ed7422;
+}
+.btn-1 .btn-sign {
+  justify-content: center;
+  border: 1px solid #fff;
+  padding: 10px 40px;
+  margin-left: 10px;
+}
+.btn-1 .btn-sign a {
+  text-align: center;
+  color: #fff;
+}
+
+.navbar-expand-lg {
+  justify-content: space-between;
+}
+
+.com-btn {
+  border-left: 10px solid #ed7422;
+}
+.com-btn .btn-sign {
+  justify-content: center;
+  border: 1px solid #fff;
+  padding: 15px 40px;
+  width: 60%;
+  margin-left: 10px;
+}
+.com-btn .btn-sign a {
+  text-align: center;
+  color: #fff;
+  font-size: 13px;
+}
+
+.home-banner {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  min-height: 90vh;
+  padding-top: 200px;
+}
+.home-banner .home-wrapper {
+  align-items: center;
+}
+.home-banner .home-wrapper .content h1 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 50px;
+}
+.home-banner .home-wrapper .content p {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.clr-1 {
+  color: #ed7422;
+}
+
+.rental {
+  padding: 80px 20px;
+}
+.rental h1 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 50px;
+}
+.rental .rental-wrapper .content-rental {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 50px 20px;
+}
+.rental .rental-wrapper .content-rental span {
+  color: #fff;
+  margin-bottom: 50px !important;
+}
+.rental .rental-wrapper .content-rental h2 {
+  color: #fff;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.rental .rental-wrapper .content-rental .btn-book {
+  border: 1px solid #fff;
+  padding: 15px;
+  width: 30%;
+  margin-top: 20px;
+}
+.rental .rental-wrapper .content-rental .btn-book a {
+  color: #fff;
+}
+
+.fun-car {
+  padding: 80px 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 50vh;
+}
+.fun-car .wrapper {
+  align-items: center;
+}
+.fun-car .wrapper .content h1 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.fun-car .wrapper .content p {
+  margin-bottom: 20px;
+}
+
+.categories {
+  padding: 50px 20px;
+}
+.categories .title-head {
+  display: flex;
+  justify-content: space-between;
+}
+.categories .title-head .title h1 {
+  font-size: 25px;
+}
+.categories .title-head .title-link {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+.categories .title-head .title-link a {
+  background-color: #3b3b3b;
+  color: #fff;
+  font-size: 10px;
+  padding: 20px;
+}
+.categories .title-head .title-link a:hover {
+  background-color: #ed7422;
+}
+.categories .wrapper {
+  margin-top: 50px;
+}
+.categories .wrapper .product {
+  align-items: center;
+  border: 5px solid #fff;
+  padding: 30px;
+}
+.categories .wrapper .product:hover {
+  background-color: #3b3b3b;
+  border: 5px solid #ed7422;
+}
+.categories .wrapper .product .cont {
+  margin-top: 20px;
+}
+.categories .wrapper .product .cont .list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.categories .wrapper .product .cont .list img {
+  width: 15px;
+  height: 15px;
+}
+.categories .wrapper .product .cont .list p {
+  font-size: 13px;
+}
+.categories .wrapper .product .button {
+  position: absolute;
+  right: -190px;
+  top: 350px;
+}
+.categories .wrapper .product .button img {
+  width: 15%;
+}
+
+.joy-rides {
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+  min-height: 50vh;
+}
+.joy-rides .wrapper {
+  align-items: center;
+}
+.joy-rides .wrapper .images {
+  padding-top: 200px;
+}
+.joy-rides .wrapper .content {
+  padding-top: 200px;
+}
+.joy-rides .wrapper .content h1 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.joy-rides .wrapper .content p {
+  margin-bottom: 20px;
+}
+
+.why-choose {
+  padding: 50px 20px;
+}
+.why-choose .wrapper h1 {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+
+.testimonials {
+  padding: 80px 20px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+  min-height: 50vh;
+}
+.testimonials .wrapper {
+  align-items: center;
+}
+.testimonials .wrapper .content h1 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+.testimonials .wrapper .content p {
+  color: #fff;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.testimonials .wrapper .content .com-btn-2 {
+  border-left: 10px solid #ed7422;
+}
+.testimonials .wrapper .content .com-btn-2 .btn-sign {
+  justify-content: center;
+  border: 1px solid #fff;
+  padding: 15px 20px;
+  width: 50%;
+  margin-left: 10px;
+}
+.testimonials .wrapper .content .com-btn-2 .btn-sign a {
+  text-align: center;
+  color: #fff;
+  font-size: 13px;
+}
+.testimonials .wrapper .side-content {
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+  min-height: 50vh;
+  align-items: center;
+}
+.testimonials .wrapper .side-content .text {
+  padding-top: 100px;
+  padding-left: 350px;
+}
+.testimonials .wrapper .side-content .text p {
+  margin-bottom: 40px;
+}
+.testimonials .wrapper .side-content .text .profile {
+  text-align: left;
+  display: flex;
+  gap: 50px;
+  position: absolute;
+  right: -150px;
+  align-items: center;
+}
+.testimonials .wrapper .side-content .text .profile span {
+  color: #ed7422;
+}
+.testimonials .wrapper .side-content .text .profile img {
+  width: 15%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+/* Custom styles for the dots */
+.custom-owl-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.custom-owl-dots button {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #ed7422;
+  margin: 0 5px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.custom-owl-dots button.active {
+  background-color: orange; /* Change active dot color to orange */
+}
+
+.owl-carousel .slide {
+  margin-right: 15px; /* Adjust this value to set the desired gap */
+}
+
+.owl-carousel .slide img {
+  width: 70%;
+}
+
+/* Ensure the last slide doesn't have a gap */
+.owl-carousel .slide:last-child {
+  margin-right: 0;
+}
+
+.logo {
+  padding: 50px 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 50vh;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.ready {
+  padding: 100px 0;
+}
+.ready .wrapper {
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 50vh;
+  border-radius: 25px;
+}
+.ready .wrapper .content h1 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.ready .wrapper .content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.ready .wrapper .content .com-btn-2 {
+  border-left: 10px solid #ed7422;
+}
+.ready .wrapper .content .com-btn-2 .btn-sign {
+  justify-content: center;
+  background-color: #ed7422;
+  padding: 15px 20px;
+  width: 50%;
+  margin-left: 10px;
+}
+.ready .wrapper .content .com-btn-2 .btn-sign a {
+  text-align: center;
+  color: #fff;
+  font-size: 13px;
+}
+
+footer .footer {
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  padding: 40px 0;
+}
+footer .footer .wrapper {
+  align-items: center;
+}
+footer .footer .wrapper .links h1 {
+  font-size: 15px;
+  margin-bottom: 40px;
+}
+footer .footer .wrapper .links ul li a {
+  color: white;
+  font-size: 15px;
+  font-family: "General Sans", sans-serif;
+}
+footer .footer .wrapper .links .social-img {
+  display: flex;
+  gap: 10px;
+}
+footer .footer .wrapper .links .social-img img {
+  width: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+footer .footer .foot {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+footer .footer .foot .email p {
+  margin-bottom: 20px;
+}
+footer .footer .foot .email button {
+  background-color: transparent;
+  border: none;
+}
+footer .footer .foot .email form {
+  border: 1px solid #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer .foot .email form input {
+  background-color: transparent;
+  border: none;
+  font-family: "General Sans", sans-serif;
+  color: #fff;
+}
+footer .footer .foot .email form img {
+  width: 40px;
+}
+footer .footer .foot .content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+footer .footer .foot .content img {
+  width: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+footer .footer .foot .content h2 {
+  font-size: 10px;
+}/*# sourceMappingURL=main.css.map */
