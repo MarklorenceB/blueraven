@@ -6,6 +6,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   background-repeat: no-repeat;
+  overflow-x: hidden;
 }
 
 ul,
@@ -201,7 +202,6 @@ textarea:focus {
 
 body {
   font-family: "Asterone DEMO", sans-serif;
-  background-color: #0e1b2a;
   color: #fff;
 }
 
@@ -224,6 +224,7 @@ body {
 
 .navbar-brand {
   width: 20%;
+  text-align: center;
 }
 .navbar-brand img {
   width: 100%;
@@ -257,17 +258,13 @@ header {
 }
 .btn-1 .btn-sign {
   justify-content: center;
-  border: 1px solid #fff;
   padding: 10px 40px;
   margin-left: 10px;
+  background-color: #ed7422;
 }
 .btn-1 .btn-sign a {
   text-align: center;
   color: #fff;
-}
-
-.navbar-expand-lg {
-  justify-content: space-between;
 }
 
 .com-btn {
@@ -275,10 +272,10 @@ header {
 }
 .com-btn .btn-sign {
   justify-content: center;
-  border: 1px solid #fff;
   padding: 15px 40px;
   width: 60%;
   margin-left: 10px;
+  background-color: #ed7422;
 }
 .com-btn .btn-sign a {
   text-align: center;
@@ -289,9 +286,10 @@ header {
 .home-banner {
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   min-height: 90vh;
-  padding-top: 200px;
+  padding-top: 300px;
+  margin-top: -150px;
 }
 .home-banner .home-wrapper {
   align-items: center;
@@ -313,10 +311,11 @@ header {
 
 .rental {
   padding: 80px 20px;
+  background-color: #fff;
 }
 .rental h1 {
   text-align: center;
-  color: #fff;
+  color: #000000;
   margin-bottom: 50px;
 }
 .rental .rental-wrapper .content-rental {
@@ -344,15 +343,98 @@ header {
   color: #fff;
 }
 
+.vehicle-categories {
+  padding: 80px 0;
+  background-color: #fff;
+}
+.vehicle-categories h1 {
+  color: #000;
+  text-align: center;
+}
+.vehicle-categories .v-wrapper {
+  margin-top: 50px;
+}
+.vehicle-categories .v-wrapper .content-1 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 85vh;
+  border-radius: 15px;
+  position: relative;
+}
+.vehicle-categories .v-wrapper .content-1 .title {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.vehicle-categories .v-wrapper .content-1 .title .i-btn {
+  text-align: right;
+  margin-left: 360px;
+}
+.vehicle-categories .v-wrapper .content-1 .title .i-btn img {
+  width: 50%;
+}
+.vehicle-categories .v-wrapper .content-2 .images-1 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 40vh;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  position: relative;
+}
+.vehicle-categories .v-wrapper .content-2 .images-1 .title {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.vehicle-categories .v-wrapper .content-2 .images-1 .title .i-btn {
+  text-align: right;
+  margin-left: 360px;
+}
+.vehicle-categories .v-wrapper .content-2 .images-1 .title .i-btn img {
+  width: 50%;
+}
+.vehicle-categories .v-wrapper .content-2 .images-2 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 40vh;
+  border-radius: 15px;
+}
+.vehicle-categories .v-wrapper .content-2 .images-2 .title {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.vehicle-categories .v-wrapper .content-2 .images-2 .title .i-btn {
+  text-align: right;
+  margin-left: 360px;
+}
+.vehicle-categories .v-wrapper .content-2 .images-2 .title .i-btn img {
+  width: 50%;
+}
+
 .fun-car {
   padding: 80px 0;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  min-height: 50vh;
+  height: 600px;
 }
 .fun-car .wrapper {
   align-items: center;
+}
+.fun-car .wrapper .content {
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
 .fun-car .wrapper .content h1 {
   font-size: 25px;
@@ -448,20 +530,47 @@ header {
 
 .why-choose {
   padding: 50px 20px;
+  background-color: #fff;
 }
-.why-choose .title {
+.why-choose h1 {
   text-align: center;
-  margin-bottom: 40px;
-}
-.why-choose .title h2 {
-  color: #ed7422;
-  font-size: 35px;
-  margin-bottom: 20px;
-}
-.why-choose .wrapper h1 {
-  text-align: center;
+  color: #000;
   font-size: 25px;
   margin-bottom: 40px;
+}
+.why-choose .wrapper .images-slider {
+  margin-top: 50px;
+}
+.why-choose .wrapper .images-slider .why-slider {
+  height: 100%;
+}
+.why-choose .wrapper .images-slider .why-slider .owl-stage,
+.why-choose .wrapper .images-slider .why-slider .owl-item,
+.why-choose .wrapper .images-slider .why-slider li,
+.why-choose .wrapper .images-slider .why-slider .owl-stage-outer {
+  height: 100%;
+}
+.why-choose .wrapper .images-slider .why-slider .owl-dots {
+  display: flex;
+  text-align: center;
+  gap: 10px;
+  margin-top: 40px;
+  justify-content: center;
+}
+.why-choose .wrapper .images-slider .why-slider .owl-dots .owl-dot {
+  height: 8px;
+  width: 33px;
+  background-color: #000000;
+}
+.why-choose .wrapper .images-slider .why-slider .owl-dots .owl-dot.active {
+  background-color: #ed7422;
+}
+.why-choose .wrapper .images-slider ul li {
+  margin-right: 20px;
+}
+.why-choose .wrapper .images-slider ul li img {
+  width: 100%;
+  height: 450px;
 }
 
 .testimonials {
@@ -470,17 +579,18 @@ header {
   background-position: top center;
   background-size: contain;
   min-height: 50vh;
+  background-color: #fff;
 }
 .testimonials .wrapper {
   align-items: center;
 }
 .testimonials .wrapper .content h1 {
-  color: #fff;
+  color: #000000;
   margin-bottom: 20px;
   font-size: 25px;
 }
 .testimonials .wrapper .content p {
-  color: #fff;
+  color: #000000;
   font-size: 15px;
   margin-bottom: 20px;
 }
@@ -493,6 +603,7 @@ header {
   padding: 15px 20px;
   width: 50%;
   margin-left: 10px;
+  background-color: #ed7422;
 }
 .testimonials .wrapper .content .com-btn-2 .btn-sign a {
   text-align: center;
@@ -530,37 +641,71 @@ header {
      object-fit: contain;
 }
 
-/* Custom styles for the dots */
-.custom-owl-dots {
-  text-align: center;
-  margin-top: 20px;
+.our-location {
+  background-color: #f5f5f5;
+  padding: 80px 0;
 }
-
-.custom-owl-dots button {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
+.our-location .wrapper {
+  align-items: center;
+}
+.our-location .wrapper .content h1 {
+  color: #000;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.our-location .wrapper .content p {
+  color: #000;
+  margin-bottom: 20px;
+}
+.our-location .wrapper .content .com-btn-2 {
+  border-left: 10px solid #ed7422;
+}
+.our-location .wrapper .content .com-btn-2 .btn-sign {
+  justify-content: center;
+  border: 1px solid #fff;
+  padding: 15px 20px;
+  width: 30%;
+  margin-left: 10px;
   background-color: #ed7422;
-  margin: 0 5px;
-  width: 50px;
-  cursor: pointer;
+}
+.our-location .wrapper .content .com-btn-2 .btn-sign a {
+  text-align: center;
+  color: #fff;
+  font-size: 13px;
 }
 
-.custom-owl-dots button.active {
-  background-color: orange; /* Change active dot color to orange */
+.who-we-are {
+  padding: 80px 0;
+  background-color: #fff;
 }
-
-.owl-carousel .slide {
-  margin-right: 15px; /* Adjust this value to set the desired gap */
+.who-we-are .wrapper {
+  align-items: center;
 }
-
-.owl-carousel .slide img {
-  width: 70%;
+.who-we-are .wrapper .content h1 {
+  color: #000;
+  font-size: 25px;
+  margin-bottom: 20px;
 }
-
-/* Ensure the last slide doesn't have a gap */
-.owl-carousel .slide:last-child {
-  margin-right: 0;
+.who-we-are .wrapper .content p {
+  color: #000;
+  margin-bottom: 20px;
+  width: 80%;
+}
+.who-we-are .wrapper .content .com-btn-2 {
+  border-left: 10px solid #ed7422;
+}
+.who-we-are .wrapper .content .com-btn-2 .btn-sign {
+  justify-content: center;
+  border: 1px solid #fff;
+  padding: 15px 20px;
+  width: 30%;
+  margin-left: 10px;
+  background-color: #ed7422;
+}
+.who-we-are .wrapper .content .com-btn-2 .btn-sign a {
+  text-align: center;
+  color: #fff;
+  font-size: 13px;
 }
 
 .logo {
@@ -568,20 +713,46 @@ header {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  min-height: 50vh;
   align-items: center;
-  margin-top: 50px;
+  background-color: #fff;
+}
+.logo .logo-slider {
+  height: 100%;
+}
+.logo .logo-slider .owl-stage,
+.logo .logo-slider .owl-item,
+.logo .logo-slider li,
+.logo .logo-slider .owl-stage-outer {
+  height: 100%;
+}
+.logo .logo-slider .owl-dots {
+  display: flex;
+  text-align: center;
+  gap: 10px;
+  margin-top: 40px;
+  justify-content: center;
+}
+.logo .logo-slider .owl-dots .owl-dot {
+  height: 8px;
+  width: 33px;
+  background-color: #000000;
+}
+.logo .logo-slider .owl-dots .owl-dot.active {
+  background-color: #ed7422;
+}
+.logo .logo-slider .slide img {
+  width: 50%;
 }
 
 .ready {
   padding: 100px 0;
-}
-.ready .wrapper {
-  align-items: center;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   min-height: 50vh;
+}
+.ready .wrapper {
+  align-items: center;
   border-radius: 25px;
 }
 .ready .wrapper .content h1 {
@@ -613,6 +784,7 @@ footer .footer {
   background-position: top center;
   background-size: cover;
   padding: 40px 0;
+  background-color: #0e1b2a;
 }
 footer .footer .wrapper {
   align-items: center;
@@ -680,9 +852,12 @@ footer .footer .foot .content h2 {
   background-repeat: no-repeat;
   background-position: center right;
   background-size: contain;
-  min-height: 80vh;
-  padding: 250px 0;
+  background-color: #fff;
+  min-height: 90vh;
+  padding-top: 350px;
+  margin-top: -250px;
   position: relative;
+  z-index: -999;
 }
 .about-banner .about-wrapper {
   align-items: center;
@@ -711,23 +886,29 @@ footer .footer .foot .content h2 {
 
 .our-gallery {
   padding: 50px 20px;
+  background-color: #fff;
 }
 .our-gallery .title {
   text-align: center;
   margin-bottom: 40px;
 }
 .our-gallery .title h2 {
-  color: #ed7422;
+  color: #000000;
   font-size: 35px;
   margin-bottom: 20px;
+}
+.our-gallery .title p {
+  color: #0c0a0a;
 }
 .our-gallery .gallery-wrapper {
   margin-bottom: 50px;
   display: flex;
-  gap: 30px;
+  justify-content: center;
+  gap: 20px;
 }
 .our-gallery .gallery-wrapper .images-gal img {
   height: 500px;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 15px;
@@ -756,9 +937,11 @@ footer .footer .foot .content h2 {
   background-repeat: no-repeat;
   background-position: center right;
   background-size: contain;
-  min-height: 80vh;
-  padding: 200px 0;
+  min-height: 90vh;
+  padding-top: 350px;
   position: relative;
+  margin-top: -250px;
+  z-index: -9999;
 }
 .rental-banner .rental-wrapper {
   align-items: center;
@@ -766,7 +949,7 @@ footer .footer .foot .content h2 {
 .rental-banner .rental-wrapper .content h1 {
   color: #fff;
   margin-bottom: 20px;
-  font-size: 50px;
+  font-size: 40px;
 }
 .rental-banner .rental-wrapper .content p {
   color: #fff;

@@ -1,5 +1,6 @@
 .category-head {
   padding: 50px 0;
+  background-color: #fff;
 }
 .category-head .row-heading {
   display: flex;
@@ -8,13 +9,14 @@
 }
 .category-head h2 {
   font-size: 40px;
+  color: #000;
 }
 .category-head h2 span {
   text-transform: capitalize;
 }
 
 .orange {
-  color: #ED7422;
+  color: #ed7422;
 }
 
 .category-list {
@@ -27,7 +29,7 @@
   align-content: center;
 }
 .category-list li a {
-  background-color: #3B3B3B;
+  background-color: #3b3b3b;
   padding: 10px 30px;
   text-align: center;
   width: 100%;
@@ -40,11 +42,12 @@
   place-content: center;
 }
 .category-list li a.active {
-  background: #ED7422;
+  background: #ed7422;
 }
 
 .showcase-section {
   margin-bottom: 50px;
+  background-color: #fff;
 }
 .showcase-section .wrapper {
   position: relative;
@@ -67,7 +70,7 @@
   display: grid;
   place-items: center;
   padding: 100px 50px;
-  background-color: #3B3B3B;
+  background-color: #0e1b2a;
   width: 40%;
   z-index: 20;
   margin-left: auto;
@@ -103,7 +106,7 @@
   content: "";
   height: 10px;
   width: 10px;
-  background-color: #ED7422;
+  background-color: #ed7422;
   border-radius: 50%;
   display: block;
   position: absolute;
@@ -122,7 +125,7 @@
   width: -moz-fit-content;
   width: fit-content;
   color: #fff;
-  border-left: 7px solid #ED7422;
+  border-left: 7px solid #ed7422;
   padding-left: 10px;
 }
 .panel-btn a span {
@@ -134,7 +137,10 @@
 .car-slider {
   height: 100%;
 }
-.car-slider .owl-stage, .car-slider .owl-item, .car-slider li, .car-slider .owl-stage-outer {
+.car-slider .owl-stage,
+.car-slider .owl-item,
+.car-slider li,
+.car-slider .owl-stage-outer {
   height: 100%;
 }
 .car-slider .owl-dots {
@@ -148,12 +154,15 @@
 .car-slider .owl-dots .owl-dot {
   height: 8px;
   width: 33px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 .car-slider .owl-dots .owl-dot.active {
-  background-color: #ED7422;
+  background-color: #ed7422;
 }
 
+.inverted-showcase {
+  background-color: #fff;
+}
 .inverted-showcase .wrapper .image-container {
   right: 0;
   left: unset;

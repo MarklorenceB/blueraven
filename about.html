@@ -70,7 +70,7 @@
                   <a href="about.html">ABOUT US</a>
                 </li>
                 <li class="nav-item">
-                  <a href="rental.html">RENTALS</a>
+                  <a href="rental-1.html">RENTALS</a>
                 </li>
                 <li class="nav-item">
                   <a href="#strategy">CONTACT US</a>
@@ -91,39 +91,79 @@
       <!-- FOR SECTIONS -->
       <div
         class="about-banner"
-        style="background-image: url(images/about-bg.webp)"
+        style="background-image: url(images/about-ban.png)"
       >
         <div class="container">
           <div class="row about-wrapper">
             <div class="col-lg-6">
               <div class="content">
-                <h1><span class="clr-1"> About us </span></h1>
-                <p>
-                  Adventure In The Okanagan Is <br />
-                  What Our Lives Are All About.
-                </p>
+                <h1>OUR STORY</h1>
+                <p>buckle up and get ready for adventure!</p>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="why-choose">
+      <div class="who-we-are">
         <div class="container">
-          <div class="title">
-            <h2>Who we are</h2>
-            <p>
-              Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do
-              Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua. Ut
-              Enim Ad Minim Veniam, Quis Nostrud Exercitation Ullamco Laboris
-              Nisi Ut Aliquip Ex Ea Commodo Consequat. Duis Aute Irure Dolor In
-              Reprehenderit In Voluptate Velit Esse Cillum Dolore Eu Fugiat
-              Nulla Pariatur. Excepteur Sint Occaecat Cupidatat Non Proident,
-              Sunt In Culpa Qui Officia Deserunt Mollit Anim Id Est Laborum.
-            </p>
+          <div class="row wrapper">
+            <div class="col-lg-6">
+              <div class="content">
+                <h1>Who we are</h1>
+                <p>
+                  Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed
+                  Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua.
+                  Ut Enim Ad Minim Veniam, Quis Nostrud Exercitation Ullamco
+                  Laboris Nisi Ut Aliquip Ex Ea Commodo Consequat. Duis Aute
+                  Irure Dolor In Reprehenderit In Voluptate Velit Esse Cillum
+                  Dolore Eu Fugiat Nulla Pariatur. Excepteur Sint Occaecat
+                  Cupidatat Non Proident, Sunt In Culpa Qui Officia Deserunt
+                  Mollit Anim Id Est Laborum.
+                </p>
+                <div class="com-btn-2">
+                  <div class="btn-sign">
+                    <a href="#">book now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="images">
+                <img src="images/pexels-behrouz-sasani-5483552.png" alt="" />
+              </div>
+            </div>
           </div>
-          <div class="wrapper">
-            <img src="images/why.png" alt="" />
+        </div>
+      </div>
+
+      <div class="fun-car" style="background-image: url(images/off-ban.png)">
+        <div class="container">
+          <div class="row wrapper">
+            <div class="col-lg-6">
+              <div class="images"></div>
+            </div>
+            <div class="col-lg-6">
+              <div class="content">
+                <h1>what we offer</h1>
+                <p>
+                  Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed
+                  Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua.
+                  Ut Enim Ad Minim Veniam, Quis Nostrud Exercitation Ullamco
+                  Laboris Nisi Ut Aliquip Ex Ea Commodo Consequat. Duis Aute
+                  Irure Dolor In Reprehenderit In Voluptate Velit Esse Cillum
+                  Dolore Eu Fugiat Nulla Pariatur. Excepteur Sint Occaecat
+                  Cupidatat Non Proident, Sunt In Culpa Qui Officia Deserunt
+                  Mollit Anim Id Est Laborum.
+                </p>
+
+                <div class="com-btn">
+                  <div class="btn-sign">
+                    <a href="#">BOOK YOUR ADVENTURE</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -162,23 +202,12 @@
               <img src="images/gal4.png" alt="" />
             </div>
           </div>
-
-          <div class="btn">
-            <div class="com-btn-1">
-              <div class="btn-sign">
-                <a href="#">contact us now!</a>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
-      <section
-        class="logo"
-        style="background-image: url(images/imgbin_china-rock-png.png)"
-      >
+      <section class="logo">
         <div class="container">
-          <div class="owl-carousel">
+          <div class="logo-slider owl-carousel">
             <div class="slide">
               <img src="images/logo-1.png" alt="Slide 1" />
             </div>
@@ -203,13 +232,9 @@
           <div class="custom-owl-dots"></div>
         </div>
       </section>
-
-      <div class="ready">
+      <div class="ready" style="background-image: url(images/elevate.png)">
         <div class="container">
-          <div
-            class="row wrapper"
-            style="background-image: url(images/elevate.png)"
-          >
+          <div class="row wrapper">
             <div class="col-lg-6"></div>
             <div class="col-lg-6">
               <div class="content">
@@ -330,31 +355,31 @@
     <script src="js/main.js"></script>
     <script type="text/javascript"></script>
     <script>
-      // Initialize Owl Carousel
-      $(".owl-carousel").owlCarousel({
-        items: 5,
-        loop: true,
-        autoplay: true,
-        autoplayTimeout: 3000,
-        autoplayHoverPause: true,
-        dots: true,
-        onChanged: updateCustomDots,
+      $(document).ready(function () {
+        var owl = $(".logo-slider");
+        owl.owlCarousel({
+          margin: 0,
+          smartSpeed: 1000,
+          autoplay: true,
+          nav: false,
+          dots: true,
+          dotsEach: true,
+          loop: true,
+          items: 5,
+          stagePadding: 0,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            991: {
+              items: 5,
+            },
+          },
+        });
       });
 
-      function updateCustomDots(event) {
-        var dots = $(".custom-owl-dots");
-        dots.find(".active").removeClass("active");
-        dots.find("button").eq(event.item.index).addClass("active");
-      }
-
-      // Add custom dots
-      var dotsContainer = $(".custom-owl-dots");
-      $(".owl-carousel .owl-dot").each(function (index) {
-        var dot = $("<button></button>");
-        dot.click(function () {
-          $(".owl-carousel").trigger("to.owl.carousel", [index, 300]);
-        });
-        dotsContainer.append(dot);
+      $(function () {
+        $(".match-content").matchHeight({ byRow: false });
       });
     </script>
   </body>

@@ -50,7 +50,9 @@ $(function () {
 $(function () {
   $(".product").matchHeight({ byRow: false });
 });
-
+$(function () {
+  $(".slider-img").matchHeight({ byRow: false });
+});
 $(function () {
   $(".imgs").matchHeight({ byRow: false });
 });
@@ -86,7 +88,6 @@ $(function () {
 });
 
 // for owl carousel
-
 
 //  (function(){
 

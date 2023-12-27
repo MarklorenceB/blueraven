@@ -7,6 +7,7 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-repeat: no-repeat;
+  overflow-x: hidden;
 }
 
 ul,
@@ -215,7 +216,7 @@ textarea:focus {
 
 body {
   font-family: "Asterone DEMO", sans-serif;
-  background-color: #0e1b2a;
+
   color: #fff;
 }
 
@@ -238,6 +239,7 @@ body {
 }
 .navbar-brand {
   width: 20%;
+  text-align: center;
   img {
     width: 100%;
     object-fit: contain;
@@ -272,18 +274,19 @@ header {
 
   .btn-sign {
     justify-content: center;
-    border: 1px solid #fff;
+
     padding: 10px 40px;
     margin-left: 10px;
+    background-color: #ed7422;
     a {
       text-align: center;
       color: #fff;
     }
   }
 }
-.navbar-expand-lg {
-  justify-content: space-between;
-}
+// .navbar-expand-lg {
+//   justify-content: space-between;
+// }
 
 //home
 
@@ -292,10 +295,11 @@ header {
 
   .btn-sign {
     justify-content: center;
-    border: 1px solid #fff;
+
     padding: 15px 40px;
     width: 60%;
     margin-left: 10px;
+    background-color: #ed7422;
     a {
       text-align: center;
       color: #fff;
@@ -307,10 +311,11 @@ header {
 .home-banner {
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
 
   min-height: 90vh;
-  padding-top: 200px;
+  padding-top: 300px;
+  margin-top: -150px;
 
   .home-wrapper {
     align-items: center;
@@ -335,9 +340,10 @@ header {
 
 .rental {
   padding: 80px 20px;
+  background-color: #fff;
   h1 {
     text-align: center;
-    color: #fff;
+    color: #000000;
     margin-bottom: 50px;
   }
   .rental-wrapper {
@@ -370,17 +376,106 @@ header {
   }
 }
 
+.vehicle-categories {
+  padding: 80px 0;
+  background-color: #fff;
+  h1 {
+    color: #000;
+    text-align: center;
+  }
+  .v-wrapper {
+    margin-top: 50px;
+    .content-1 {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      min-height: 85vh;
+      border-radius: 15px;
+      position: relative;
+
+      .title {
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+
+        padding: 20px;
+        .i-btn {
+          text-align: right;
+          margin-left: 360px;
+          img {
+            width: 50%;
+          }
+        }
+      }
+    }
+
+    .content-2 {
+      .images-1 {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        min-height: 40vh;
+        border-radius: 15px;
+        margin-bottom: 40px;
+        position: relative;
+
+        .title {
+          position: absolute;
+          bottom: 0;
+          display: flex;
+          align-items: center;
+
+          padding: 20px;
+          .i-btn {
+            text-align: right;
+            margin-left: 360px;
+            img {
+              width: 50%;
+            }
+          }
+        }
+      }
+      .images-2 {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        min-height: 40vh;
+        border-radius: 15px;
+
+        .title {
+          position: absolute;
+          bottom: 0;
+          display: flex;
+          align-items: center;
+
+          padding: 20px;
+          .i-btn {
+            text-align: right;
+            margin-left: 360px;
+            img {
+              width: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 .fun-car {
   padding: 80px 0;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  min-height: 50vh;
-
+  height: 600px;
   .wrapper {
     align-items: center;
 
     .content {
+      display: grid;
+      align-items: center;
+      justify-content: center;
       h1 {
         font-size: 25px;
         margin-bottom: 20px;
@@ -486,21 +581,51 @@ header {
 
 .why-choose {
   padding: 50px 20px;
-
-  .title {
+  background-color: #fff;
+  h1 {
     text-align: center;
+    color: #000;
+    font-size: 25px;
     margin-bottom: 40px;
-    h2 {
-      color: #ed7422;
-      font-size: 35px;
-      margin-bottom: 20px;
-    }
   }
+
   .wrapper {
-    h1 {
-      text-align: center;
-      font-size: 25px;
-      margin-bottom: 40px;
+    .images-slider {
+      margin-top: 50px;
+      .why-slider {
+        height: 100%;
+        .owl-stage,
+        .owl-item,
+        li,
+        .owl-stage-outer {
+          height: 100%;
+        }
+        .owl-dots {
+          display: flex;
+          text-align: center;
+          gap: 10px;
+          margin-top: 40px;
+          justify-content: center;
+
+          .owl-dot {
+            height: 8px;
+            width: 33px;
+            background-color: #000000;
+            &.active {
+              background-color: #ed7422;
+            }
+          }
+        }
+      }
+      ul {
+        li {
+          margin-right: 20px;
+          img {
+            width: 100%;
+            height: 450px;
+          }
+        }
+      }
     }
   }
 }
@@ -511,17 +636,18 @@ header {
   background-position: top center;
   background-size: contain;
   min-height: 50vh;
+  background-color: #fff;
   .wrapper {
     align-items: center;
 
     .content {
       h1 {
-        color: #fff;
+        color: #000000;
         margin-bottom: 20px;
         font-size: 25px;
       }
       p {
-        color: #fff;
+        color: #000000;
         font-size: 15px;
         margin-bottom: 20px;
       }
@@ -535,6 +661,7 @@ header {
           padding: 15px 20px;
           width: 50%;
           margin-left: 10px;
+          background-color: #ed7422;
           a {
             text-align: center;
             color: #fff;
@@ -578,35 +705,81 @@ header {
   }
 }
 
-/* Custom styles for the dots */
-.custom-owl-dots {
-  text-align: center;
-  margin-top: 20px;
+.our-location {
+  background-color: #f5f5f5;
+  padding: 80px 0;
+
+  .wrapper {
+    align-items: center;
+
+    .content {
+      h1 {
+        color: #000;
+        font-size: 25px;
+        margin-bottom: 20px;
+      }
+      p {
+        color: #000;
+        margin-bottom: 20px;
+      }
+      .com-btn-2 {
+        border-left: 10px solid #ed7422;
+
+        .btn-sign {
+          justify-content: center;
+          border: 1px solid #fff;
+          padding: 15px 20px;
+          width: 30%;
+          margin-left: 10px;
+          background-color: #ed7422;
+          a {
+            text-align: center;
+            color: #fff;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
 }
 
-.custom-owl-dots button {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  background-color: #ed7422;
-  margin: 0 5px;
-  width: 50px;
-  cursor: pointer;
-}
+.who-we-are {
+  padding: 80px 0;
+  background-color: #fff;
 
-.custom-owl-dots button.active {
-  background-color: orange; /* Change active dot color to orange */
-}
-.owl-carousel .slide {
-  margin-right: 15px; /* Adjust this value to set the desired gap */
-}
-.owl-carousel .slide img {
-  width: 70%;
-}
+  .wrapper {
+    align-items: center;
 
-/* Ensure the last slide doesn't have a gap */
-.owl-carousel .slide:last-child {
-  margin-right: 0;
+    .content {
+      h1 {
+        color: #000;
+        font-size: 25px;
+        margin-bottom: 20px;
+      }
+      p {
+        color: #000;
+        margin-bottom: 20px;
+        width: 80%;
+      }
+      .com-btn-2 {
+        border-left: 10px solid #ed7422;
+
+        .btn-sign {
+          justify-content: center;
+          border: 1px solid #fff;
+          padding: 15px 20px;
+          width: 30%;
+          margin-left: 10px;
+          background-color: #ed7422;
+          a {
+            text-align: center;
+            color: #fff;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
 }
 
 .logo {
@@ -614,20 +787,52 @@ header {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  min-height: 50vh;
+
   align-items: center;
-  margin-top: 50px;
+
+  background-color: #fff;
+
+  .logo-slider {
+    height: 100%;
+    .owl-stage,
+    .owl-item,
+    li,
+    .owl-stage-outer {
+      height: 100%;
+    }
+    .owl-dots {
+      display: flex;
+      text-align: center;
+      gap: 10px;
+      margin-top: 40px;
+      justify-content: center;
+
+      .owl-dot {
+        height: 8px;
+        width: 33px;
+        background-color: #000000;
+        &.active {
+          background-color: #ed7422;
+        }
+      }
+    }
+    .slide {
+      img {
+        width: 50%;
+      }
+    }
+  }
 }
 
 .ready {
   padding: 100px 0;
-
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 50vh;
   .wrapper {
     align-items: center;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    min-height: 50vh;
+
     border-radius: 25px;
     .content {
       h1 {
@@ -664,6 +869,7 @@ footer {
     background-position: top center;
     background-size: cover;
     padding: 40px 0;
+    background-color: #0e1b2a;
     .wrapper {
       align-items: center;
 
@@ -739,10 +945,12 @@ footer {
   background-repeat: no-repeat;
   background-position: center right;
   background-size: contain;
-
-  min-height: 80vh;
-  padding: 250px 0;
+  background-color: #fff;
+  min-height: 90vh;
+  padding-top: 350px;
+  margin-top: -250px;
   position: relative;
+  z-index: -999;
 
   .about-wrapper {
     align-items: center;
@@ -776,22 +984,28 @@ footer {
 
 .our-gallery {
   padding: 50px 20px;
+  background-color: #fff;
   .title {
     text-align: center;
     margin-bottom: 40px;
     h2 {
-      color: #ed7422;
+      color: #000000;
       font-size: 35px;
       margin-bottom: 20px;
+    }
+    p {
+      color: #0c0a0a;
     }
   }
   .gallery-wrapper {
     margin-bottom: 50px;
     display: flex;
-    gap: 30px;
+    justify-content: center;
+    gap: 20px;
     .images-gal {
       img {
         height: 500px;
+        width: 100%;
         object-fit: cover;
         border-radius: 15px;
       }
@@ -826,9 +1040,11 @@ footer {
   background-position: center right;
   background-size: contain;
 
-  min-height: 80vh;
-  padding: 200px 0;
+  min-height: 90vh;
+  padding-top: 350px;
   position: relative;
+  margin-top: -250px;
+  z-index: -9999;
 
   .rental-wrapper {
     align-items: center;
@@ -837,7 +1053,7 @@ footer {
       h1 {
         color: #fff;
         margin-bottom: 20px;
-        font-size: 50px;
+        font-size: 40px;
       }
       p {
         color: #fff;
