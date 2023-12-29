@@ -156,7 +156,7 @@ textarea:focus {
   box-sizing: content-box;
   background-clip: content-box;
   transition: background-color 500ms ease-in-out 250ms;
-  background-color: #000;
+  background-color: #ffffff;
   transform: scale(1.2);
 }
 
@@ -171,7 +171,7 @@ textarea:focus {
   display: block;
   width: 18px;
   height: 2px;
-  background-color: #000;
+  background-color: #ffffff;
   transition: transform 500ms ease-in-out;
 }
 
@@ -617,6 +617,33 @@ header {
   color: #fff;
   font-size: 13px;
 }
+.testimonials .wrapper .testi-slider {
+  height: 100%;
+}
+.testimonials .wrapper .testi-slider .owl-stage,
+.testimonials .wrapper .testi-slider .owl-item,
+.testimonials .wrapper .testi-slider li,
+.testimonials .wrapper .testi-slider .owl-stage-outer {
+  height: 100%;
+}
+.testimonials .wrapper .testi-slider .owl-dots {
+  display: flex;
+  text-align: center;
+  gap: 10px;
+  margin-top: 40px;
+  justify-content: right;
+}
+.testimonials .wrapper .testi-slider .owl-dots .owl-dot {
+  height: 8px;
+  width: 33px;
+  background-color: #000000;
+}
+.testimonials .wrapper .testi-slider .owl-dots .owl-dot.active {
+  background-color: #ed7422;
+}
+.testimonials .wrapper .testi-slider .slide img {
+  width: 50%;
+}
 .testimonials .wrapper .side-content {
   background-repeat: no-repeat;
   background-position: top center;
@@ -626,7 +653,11 @@ header {
 }
 .testimonials .wrapper .side-content .text {
   padding-top: 100px;
-  padding-left: 350px;
+  padding-left: 450px;
+  padding-right: 50px;
+}
+.testimonials .wrapper .side-content .text h1 {
+  font-size: 25px;
 }
 .testimonials .wrapper .side-content .text p {
   margin-bottom: 40px;
@@ -746,6 +777,9 @@ header {
 }
 .logo .logo-slider .owl-dots .owl-dot.active {
   background-color: #ed7422;
+}
+.logo .logo-slider .slide {
+  text-align: center;
 }
 .logo .logo-slider .slide img {
   width: 50%;
@@ -1139,6 +1173,7 @@ footer .footer .foot .content h2 {
 .booking-form form input {
   width: 100%;
   padding: 15px 20px;
+  margin-bottom: 40px;
 }
 .booking-form form input::-moz-placeholder {
   color: #000;
@@ -1150,6 +1185,7 @@ footer .footer .foot .content h2 {
   width: 100%;
   padding: 20px 20px;
   border: none;
+  margin-bottom: 40px;
 }
 .booking-form form textarea {
   width: 100%;
@@ -1166,8 +1202,9 @@ footer .footer .foot .content h2 {
 .booking-form form .check-1 {
   padding: 210px;
 }
-.booking-form form .form-list {
-  margin-bottom: 40px;
+.booking-form form .form-list-1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .booking-form form p {
   margin-top: 20px;
@@ -1424,10 +1461,6 @@ footer .footer .foot .content h2 {
   color: #ed7422;
   font-weight: bold;
 }
-.contact-form .contact-wrapper .cont-form form .check {
-  display: flex;
-  gap: 20px;
-}
 .contact-form .contact-wrapper .cont-form form .check-1 {
   padding: 210px;
 }
@@ -1436,4 +1469,146 @@ footer .footer .foot .content h2 {
 }
 .contact-form .contact-wrapper .cont-form form p {
   margin-top: 20px;
+}
+
+.head-1 {
+  background-color: #0e1b2a;
+}
+
+.signup {
+  padding: 80px 20px;
+  margin-top: 200px;
+}
+.signup .sign-wrapper {
+  padding: 0 50px;
+}
+.signup .sign-wrapper h1 {
+  color: #ed7422;
+  margin-bottom: 20px;
+}
+.signup .sign-wrapper .form {
+  background-color: #0e1b2a;
+  padding: 90px;
+}
+.signup .sign-wrapper .form form input {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+.signup .sign-wrapper .form form label {
+  color: #ed7422;
+  margin-bottom: 20px;
+}
+.signup .sign-wrapper .form form .sign {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.signup .sign-wrapper .form form .sign span {
+  font-size: 15px;
+  font-family: "General Sans", sans-serif;
+  font-weight: 600;
+}
+.signup .sign-wrapper .form form .sign span a {
+  color: #ed7422;
+  font-weight: 600;
+}
+.signup .sign-wrapper .form form .sign .com-btn-submit {
+  border-left: 10px solid #ed7422;
+}
+.signup .sign-wrapper .form form .sign .com-btn-submit .btn-sign {
+  justify-content: center;
+  cursor: pointer;
+  padding: 15px 20px;
+  width: 200px;
+  margin-left: 10px;
+  background-color: #ed7422;
+}
+.signup .sign-wrapper .form form .sign .com-btn-submit .btn-sign a {
+  text-align: center;
+  color: #fff;
+  font-size: 13px;
+}
+
+.login {
+  padding: 80px 20px;
+  margin-top: 200px;
+}
+.login .sign-wrapper {
+  padding: 0 50px;
+}
+.login .sign-wrapper h1 {
+  color: #ed7422;
+  margin-bottom: 20px;
+}
+.login .sign-wrapper .form {
+  background-color: #0e1b2a;
+  padding: 90px;
+}
+.login .sign-wrapper .form form input {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+.login .sign-wrapper .form form label {
+  color: #ed7422;
+  margin-bottom: 20px;
+}
+.login .sign-wrapper .form form .sign {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.login .sign-wrapper .form form .sign span {
+  font-size: 15px;
+  font-weight: 600;
+}
+.login .sign-wrapper .form form .sign span .forgot {
+  color: #fff;
+  font-family: "General Sans", sans-serif;
+  font-weight: 600;
+}
+.login .sign-wrapper .form form .sign .com-btn-submit {
+  border-left: 10px solid #ed7422;
+}
+.login .sign-wrapper .form form .sign .com-btn-submit .btn-sign {
+  justify-content: center;
+  cursor: pointer;
+  padding: 15px 20px;
+  width: 200px;
+  margin-left: 10px;
+  background-color: #ed7422;
+}
+.login .sign-wrapper .form form .sign .com-btn-submit .btn-sign a {
+  text-align: center;
+  color: #fff;
+  font-size: 13px;
+}
+.login .sign-wrapper .form form .content-side {
+  text-align: center;
+}
+.login .sign-wrapper .form form .content-side p {
+  font-size: 18px;
+}
+.login .sign-wrapper .form form .content-side .btn-book {
+  display: grid;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.login .sign-wrapper .form form .content-side .btn-book .com-btn-2 {
+  border-left: 10px solid #ed7422;
+}
+.login .sign-wrapper .form form .content-side .btn-book .com-btn-2 .btn-sign {
+  justify-content: center;
+  border: 1px solid #fff;
+  padding: 15px 20px;
+  width: 350px;
+  margin-left: 10px;
+  background-color: #ed7422;
+  border: none;
+}
+.login .sign-wrapper .form form .content-side .btn-book .com-btn-2 .btn-sign a {
+  text-align: center;
+  color: #fff;
+  font-size: 13px;
 }/*# sourceMappingURL=main.css.map */

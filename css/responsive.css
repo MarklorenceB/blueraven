@@ -1,5 +1,481 @@
-@media(min-width: 992px){
-    .container{
-        max-width: 1600px;
-    }
+@media (min-width: 992px) {
+  .container {
+    max-width: 1600px;
+  }
+}
+
+@media (max-width: 991px) {
+  .book-1 {
+    padding: 50px 20px;
+  }
+  .booking-banner {
+    padding-top: 150px;
+  }
+  .btn-1 {
+    margin-right: 40px;
+  }
+  .btn-1 {
+    margin-right: 24px;
+    width: fit-content;
+    position: absolute;
+    right: 50px;
+    top: 20px;
+  }
+  .btn-1 .btn-sign {
+    padding: 10px 50px;
+    font-size: 10px;
+  }
+  .com-btn-submit .btn-sign {
+    width: 40%;
+  }
+  .faqs-section .wrapper {
+    flex-direction: column;
+  }
+  .faqs-section .wrapper .content-1 {
+    width: 100%;
+    height: auto;
+  }
+  .faqs-section .wrapper .content-2 {
+    width: 100%;
+    height: auto;
+  }
+  .login .sign-wrapper .form form .content-side h1 {
+    margin-top: 40px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 0;
+  }
+  .navbar-brand {
+    width: 30%;
+  }
+
+  .btn-1 {
+    margin-right: 40px;
+  }
+  .btn-1 {
+    margin-right: 24px;
+    width: fit-content;
+    position: absolute;
+    right: 50px;
+    top: 20px;
+  }
+  .btn-1 .btn-sign {
+    padding: 10px;
+    font-size: 10px;
+  }
+
+  .home-banner {
+    padding: 150px 20px;
+    min-height: 80vh;
+  }
+  .home-banner .home-wrapper .content h1 {
+    font-size: 25px;
+  }
+  .com-btn .btn-sign {
+    width: 100%;
+    font-size: 10px;
+  }
+  .com-btn .btn-sign a {
+    font-size: 12px;
+  }
+  .vehicle-categories h1 {
+    font-size: 25px;
+  }
+  .vehicle-categories .v-wrapper .content-1 .title .i-btn {
+    text-align: right;
+    margin-left: 30px;
+  }
+  .vehicle-categories .v-wrapper .content-1 {
+    min-height: 50vh !important;
+    margin-bottom: 30px;
+  }
+  .testimonials .wrapper .side-content {
+    background-size: cover;
+  }
+  .testimonials .wrapper .side-content .text {
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 20px;
+  }
+  .testimonials .wrapper .side-content .text h1 {
+    font-size: 15px;
+  }
+  .testimonials .wrapper .side-content .text p {
+    font-size: 10px;
+  }
+
+  .testimonials .wrapper .side-content .text .profile {
+    gap: 10px;
+    right: 0;
+    left: 90px;
+  }
+  .testimonials .wrapper .content .com-btn-2 .btn-sign {
+    width: 100%;
+  }
+  .our-location .wrapper .content .com-btn-2 .btn-sign {
+    width: 100%;
+  }
+  .testimonials .wrapper .content h1 {
+    color: #000000;
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .rental h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .rental .rental-wrapper .content-rental .btn-book {
+    width: 100%;
+  }
+  .logo {
+    padding: 50px 40px;
+  }
+  .logo .logo-slider .slide img {
+    width: 100%;
+    object-fit: contain;
+  }
+  .ready .wrapper .content h1 {
+    font-size: 20px;
+  }
+
+  .ready {
+    padding: 50px 20px;
+  }
+  .ready .wrapper .content .com-btn-2 .btn-sign {
+    width: 100%;
+  }
+  .our-location {
+    padding: 50px 20px;
+  }
+
+  .our-location .wrapper .content h1 {
+    margin-top: 20px;
+  }
+
+  .about-banner {
+    padding-top: 150px;
+    min-height: 60vh;
+  }
+  .about-banner .about-wrapper .content h1 {
+    font-size: 25px;
+  }
+  .navbar {
+    padding: 10px 0;
+  }
+  .about-banner .about-wrapper .content p {
+    font-size: 15px;
+  }
+  .who-we-are {
+    padding: 50px 20px;
+  }
+  .who-we-are .wrapper .content p {
+    width: 100%;
+  }
+  .who-we-are .wrapper .content .com-btn-2 .btn-sign {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .fun-car {
+    padding: 50px 20px;
+  }
+  .our-gallery .title h2 {
+    font-size: 25px;
+  }
+  .our-gallery .gallery-wrapper {
+    flex-direction: column;
+  }
+
+  .booking-banner {
+    padding-top: 150px;
+    min-height: 60vh;
+  }
+  .booking-banner .booking-wrapper h1 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  .booking-content p {
+    font-size: 15px;
+  }
+  .booking-form {
+    padding: 50px 10px;
+  }
+  .booking-form .wrapper .form {
+    padding: 30px;
+  }
+  .com-btn-submit .btn-sign {
+    width: 60%;
+  }
+  .booking-form .side-content .date-pick {
+    width: 100%;
+  }
+  .booking-form .side-content .date-pick .pickup h2 {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .booking-form .side-content .date-pick .return h2 {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  .booking-form .side-content .date-pick .pickup span {
+    margin-bottom: 20px;
+  }
+  .booking-form .side-content .date-pick .pickup {
+    padding-right: 10px;
+  }
+  .table-no-border,
+  .table-no-border thead th,
+  .table-no-border tbody + tbody {
+    font-size: 12px;
+  }
+  .booking-form .side-content .item tbody tr td {
+    font-size: 10px;
+  }
+  .booking-form .wrapper .form .heading h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .booking-form .wrapper .form .heading p {
+    font-size: 15px;
+  }
+  .booking-form .side-content h1 {
+    text-align: center;
+    font-size: 20px;
+  }
+  .booking-form .side-content img {
+    margin-top: 40px;
+  }
+  .navbar-nav {
+    padding: 30px;
+  }
+  .navbar-nav li a {
+    font-size: 12px;
+  }
+  .booking-form form .form-list-1 {
+    font-size: 6px;
+  }
+  .booking-form form label {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+  /* .booking-form form input {
+    padding: 15px 20px;
+  }
+  .booking-form form select {
+    padding: 15px 20px;
+  } */
+  .faqs-section {
+    padding: 50px 20px;
+  }
+  .faqs-section .wrapper {
+    flex-direction: column;
+  }
+  .faqs-section .wrapper .content-1 {
+    width: 100%;
+    height: auto;
+  }
+  .faqs-section .wrapper .content-2 {
+    width: 100%;
+    height: auto;
+  }
+  .faqs-section .wrapper .content-1 h1 {
+    font-size: 20px;
+  }
+  .faqs-section .wrapper .content-2 h1 {
+    font-size: 20px;
+  }
+  .accordion {
+    padding: 20px 10px;
+    margin: 0;
+  }
+  .accordion-content {
+    font-size: 12px;
+  }
+  .accordion-title {
+    font-size: 10px;
+  }
+  .accordion-item h1 {
+    font-size: 20px;
+  }
+  .btn-book {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .btn-book .com-btn-2 .btn-sign {
+    width: 250px;
+  }
+  .btn-book .com-btn-2 .btn-sign a {
+    font-size: 12px;
+  }
+  .rental-inner {
+    padding-top: 550px;
+    min-height: 20vh !important;
+  }
+
+  .rental-section .rental-wrapper .content h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .rental-section .rental-wrapper .content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .rental-section .rental-wrapper .images {
+    margin-bottom: 40px;
+  }
+  .rental-section .rental-wrapper .content ul {
+    margin-bottom: 30px;
+  }
+
+  .footer .wrapper .images {
+    margin-bottom: 40px;
+  }
+  .footer .wrapper .links {
+    margin-bottom: 40px;
+  }
+  footer .footer .wrapper .links h1 {
+    margin-bottom: 20px;
+  }
+  .foot {
+    flex-direction: column;
+  }
+  .foot .content {
+    align-items: center;
+    margin-top: 40px;
+    text-align: center;
+  }
+  footer .footer {
+    padding: 40px 20px;
+  }
+  .contact-form .contact-wrapper .cont-form .contact-head h1 {
+    font-size: 20px;
+  }
+  .contact-form .contact-wrapper .cont-form form input::placeholder {
+    font-size: 12px;
+  }
+  .contact-form .contact-wrapper .cont-form form textarea {
+    margin-bottom: 20px;
+  }
+  .contact-form .contact-wrapper .cont-form form textarea::placeholder {
+    font-size: 12px;
+  }
+  .contact-form .contact-wrapper .cont-form {
+    padding: 50px 20px;
+  }
+  .login .sign-wrapper {
+    padding: 0;
+  }
+  .login {
+    margin-top: 100px;
+    padding: 40px 0;
+  }
+  .login .sign-wrapper h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .login .sign-wrapper .form {
+    padding: 20px;
+  }
+  .login .sign-wrapper .form form input {
+    padding: 15px;
+  }
+  .login .sign-wrapper .form form label {
+    font-size: 12px;
+  }
+  .login .sign-wrapper .form form .sign {
+    flex-direction: column;
+  }
+  .login .sign-wrapper .form form .content-side h1 {
+    margin-top: 40px;
+    font-size: 20px;
+  }
+  .login .sign-wrapper .form form .content-side .btn-book .com-btn-2 .btn-sign {
+    width: 240px;
+  }
+
+  .signup .sign-wrapper {
+    padding: 0;
+  }
+  .signup {
+    margin-top: 100px;
+    padding: 40px 0;
+  }
+  .signup .sign-wrapper h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .signup .sign-wrapper .form {
+    padding: 20px;
+  }
+  .signup .sign-wrapper .form form input {
+    padding: 15px;
+  }
+  .signup .sign-wrapper .form form label {
+    font-size: 12px;
+  }
+  .signup .sign-wrapper .form form .sign {
+    flex-direction: column;
+  }
+  .signup .sign-wrapper .form form .content-side h1 {
+    margin-top: 40px;
+    font-size: 20px;
+  }
+  .signup
+    .sign-wrapper
+    .form
+    form
+    .content-side
+    .btn-book
+    .com-btn-2
+    .btn-sign {
+    width: 240px;
+  }
+
+  .showcase-section .wrapper .panel-content {
+    display: block;
+    width: 100%;
+    height: 900px;
+  }
+
+  .rental-banner {
+    padding-top: 150px;
+    min-height: 70vh;
+  }
+  .rental-banner .rental-wrapper .content h1 {
+    font-size: 25px;
+  }
+  .rental-banner .rental-wrapper .content p {
+    font-size: 15px;
+  }
+  .showcase-section .wrapper .panel-content .content h2 {
+    font-size: 20px;
+  }
+  .panel-btn {
+    flex-direction: column;
+  }
+  .panel-btn a {
+    width: 100%;
+    font-size: 15px;
+  }
+  .category-head .row-heading {
+    flex-direction: column;
+  }
+  .category-list {
+    flex-direction: column;
+  }
+  .category-head h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .rental .rental-wrapper .content-rental {
+    margin-bottom: 20px;
+  }
+  .rental .rental-wrapper .content-rental .btn-book {
+    margin-left: -5px;
+  }
 }

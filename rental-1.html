@@ -369,9 +369,7 @@
           <div class="row wrapper">
             <div class="col-lg-4">
               <div class="content">
-                <h1>
-                  What our<br /><span class="clr-1">customers says </span>
-                </h1>
+                <h1>What our <br />customers says</h1>
                 <div class="com-btn-2">
                   <div class="btn-sign">
                     <a href="#">book now</a>
@@ -380,12 +378,51 @@
               </div>
             </div>
 
-            <div class="col-lg-8">
+            <div class="col-lg-8 testi-slider owl-carousel">
               <div
                 class="side-content"
                 style="background-image: url(images/cbg.png)"
               >
                 <div class="text">
+                  <h1>great experience!</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                  <div class="profile">
+                    <span>- john doe</span>
+                    <img src="images/dp.png" alt="" />
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="side-content"
+                style="background-image: url(images/cbg.png)"
+              >
+                <div class="text">
+                  <h1>great experience!</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                  <div class="profile">
+                    <span>- john doe</span>
+                    <img src="images/dp.png" alt="" />
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="side-content"
+                style="background-image: url(images/cbg.png)"
+              >
+                <div class="text">
+                  <h1>great experience!</h1>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
@@ -607,6 +644,29 @@
 
       $(function () {
         $(".match-content").matchHeight({ byRow: false });
+      });
+
+      $(document).ready(function () {
+        var owl = $(".testi-slider");
+        owl.owlCarousel({
+          margin: 0,
+          smartSpeed: 1000,
+          autoplay: true,
+          nav: false,
+          dots: true,
+          dotsEach: true,
+          loop: true,
+          items: 5,
+          stagePadding: 0,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            991: {
+              items: 1,
+            },
+          },
+        });
       });
     </script>
   </body>

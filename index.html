@@ -87,8 +87,8 @@
         </div>
       </div>
     </header>
-
-    <!-- <header>
+    <!-- 
+    <header>
       <div class="container">
         <div class="navbar-container" id="navbar">
           <nav class="navbar navbar-expand-lg main_nav">
@@ -131,7 +131,8 @@
           </nav>
         </div>
       </div>
-    </header> -->
+    </header>
+    -->
 
     <main>
       <!-- FOR SECTIONS -->
@@ -431,12 +432,51 @@
               </div>
             </div>
 
-            <div class="col-lg-8">
+            <div class="col-lg-8 testi-slider owl-carousel">
               <div
                 class="side-content"
                 style="background-image: url(images/cbg.png)"
               >
                 <div class="text">
+                  <h1>great experience!</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                  <div class="profile">
+                    <span>- john doe</span>
+                    <img src="images/dp.png" alt="" />
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="side-content"
+                style="background-image: url(images/cbg.png)"
+              >
+                <div class="text">
+                  <h1>great experience!</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                  <div class="profile">
+                    <span>- john doe</span>
+                    <img src="images/dp.png" alt="" />
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="side-content"
+                style="background-image: url(images/cbg.png)"
+              >
+                <div class="text">
+                  <h1>great experience!</h1>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
@@ -500,7 +540,7 @@
           </video> -->
           <h1>Rental Special Offers</h1>
           <div class="row rental-wrapper">
-            <div class="col-lg-6">
+            <div class="col-lg-6 rent-1">
               <div
                 class="content-rental"
                 style="background-image: url(images/o-1.png)"
@@ -515,7 +555,7 @@
               </div>
             </div>
 
-            <div class="col-lg-6">
+            <div class="col-lg-6 rent-1">
               <div
                 class="content-rental"
                 style="background-image: url(images/feature_deal_xlg_2.png)"
@@ -684,33 +724,6 @@
     <script src="js/main.js"></script>
     <script type="text/javascript"></script>
     <script>
-      // Initialize Owl Carousel
-      // $(".logo").owlCarousel({
-      //   items: 5,
-      //   loop: true,
-      //   autoplay: true,
-      //   autoplayTimeout: 3000,
-      //   autoplayHoverPause: true,
-      //   dots: true,
-      //   onChanged: updateCustomDots,
-      // });
-
-      // function updateCustomDots(event) {
-      //   var dots = $(".custom-owl-dots");
-      //   dots.find(".active").removeClass("active");
-      //   dots.find("button").eq(event.item.index).addClass("active");
-      // }
-
-      // // Add custom dots
-      // var dotsContainer = $(".custom-owl-dots");
-      // $(".owl-carousel .owl-dot").each(function (index) {
-      //   var dot = $("<button></button>");
-      //   dot.click(function () {
-      //     $(".owl-carousel").trigger("to.owl.carousel", [index, 300]);
-      //   });
-      //   dotsContainer.append(dot);
-      // });
-
       $(document).ready(function () {
         var owl = $(".why-slider");
         owl.owlCarousel({
@@ -739,6 +752,29 @@
       });
 
       $(document).ready(function () {
+        var owl = $(".testi-slider");
+        owl.owlCarousel({
+          margin: 0,
+          smartSpeed: 1000,
+          autoplay: true,
+          nav: false,
+          dots: true,
+          dotsEach: true,
+          loop: true,
+          items: 5,
+          stagePadding: 0,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            991: {
+              items: 1,
+            },
+          },
+        });
+      });
+
+      $(document).ready(function () {
         var owl = $(".logo-slider");
         owl.owlCarousel({
           margin: 0,
@@ -759,10 +795,6 @@
             },
           },
         });
-      });
-
-      $(function () {
-        $(".match-content").matchHeight({ byRow: false });
       });
     </script>
   </body>
