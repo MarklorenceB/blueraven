@@ -478,4 +478,22 @@
   .rental .rental-wrapper .content-rental .btn-book {
     margin-left: -5px;
   }
+  .showcase-section .wrapper .image-container {
+    position: static;
+    width: 100%;
+    max-width: 100%;
+    height: 100px;
+  }
+  .showcase-section .wrapper .image-container img {
+    height: 200px;
+  }
+  .inverted-showcase .wrapper .panel-content .cutt {
+    display: none;
+  }
+  .showcase-section .wrapper .panel-content .cutt {
+    display: none;
+  }
+  .match-content {
+    height: 100% !important;
+  }
 }
