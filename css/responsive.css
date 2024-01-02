@@ -43,6 +43,28 @@
     margin-top: 40px;
     font-size: 20px;
   }
+  .foot {
+    flex-direction: column;
+    text-align: center;
+  }
+  .foot .content {
+    align-items: center;
+    margin-top: 40px;
+    text-align: center;
+  }
+  .footer .wrapper .images {
+    margin-bottom: 50px;
+  }
+  .footer .wrapper .images img {
+    width: 100%;
+  }
+  .vehicle-categories .v-wrapper .content-2 .images-1 {
+    min-height: 80vh;
+    margin-top: 20px;
+  }
+  .vehicle-categories .v-wrapper .content-2 .images-2 {
+    min-height: 80vh;
+  }
 }
 
 @media (max-width: 768px) {
