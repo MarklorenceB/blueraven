@@ -59,11 +59,11 @@
     width: 100%;
   }
   .vehicle-categories .v-wrapper .content-2 .images-1 {
-    min-height: 80vh;
+    min-height: 60vh;
     margin-top: 20px;
   }
   .vehicle-categories .v-wrapper .content-2 .images-2 {
-    min-height: 80vh;
+    min-height: 60vh;
   }
 }
 
@@ -102,14 +102,37 @@
     font-size: 10px;
   }
   .com-btn .btn-sign a {
-    font-size: 12px;
+    font-size: 10px;
   }
   .vehicle-categories h1 {
     font-size: 25px;
   }
+  .why-choose .wrapper .images-slider ul li img {
+    height: 250px !important;
+  }
   .vehicle-categories .v-wrapper .content-1 .title .i-btn {
     text-align: right;
     margin-left: 30px;
+    width: 90px;
+  }
+  .vehicle-categories .v-wrapper .content-1 .title h2 {
+    font-size: 20px;
+  }
+  .vehicle-categories .v-wrapper .content-2 .images-1 .title .i-btn {
+    text-align: right;
+    margin-left: 70px;
+    width: 90px;
+  }
+  .vehicle-categories .v-wrapper .content-2 .images-1 .title h2 {
+    font-size: 20px;
+  }
+  .vehicle-categories .v-wrapper .content-2 .images-2 .title .i-btn {
+    text-align: right;
+    margin-left: 30px;
+    width: 90px;
+  }
+  .vehicle-categories .v-wrapper .content-2 .images-2 .title h2 {
+    font-size: 20px;
   }
   .vehicle-categories .v-wrapper .content-1 {
     min-height: 50vh !important;
